@@ -4,6 +4,7 @@
     <link href="main.css" rel="stylesheet" />
     <title>bob's book</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="a page for recording thoughts and experimenting with code" />
     <meta name="keywords" content="education, coding" />
 </head>
@@ -27,14 +28,14 @@
     <nav class="sticky">
         <ul>
             <li><a accesskey="i" href="#identity">Identity</a></li>
-            <li><a accesskey="m" href="#miscellany">Miscellany</a></li>
+            <li><a accesskey="m" href="#writings">Writings</a></li>
             <li><a accesskey="c" href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
         <div class="intro">
-            <p id="blurb">
-                made with pure CSS and HTML<br/>
+            <p id="summary">
+                made with pure CSS and HTML<br />
                 no influencers so no Javascript
             </p>
             <div class="choices">
@@ -45,9 +46,7 @@
                             <p>personal info</p>
                         </div>
                         <div class="decision">
-                            <form action="#identity">
-                                <input type="submit" value="Profile" />
-                            </form>
+                            <a href="#identity"><button>Profile</button></a>
                         </div>
                     </div>
                 </div>
@@ -58,19 +57,17 @@
                             <p>company info</p>
                         </div>
                         <div class="decision">
-                            <form target="_blank" action="https://coded.art">
-                                <input type="submit" value="Code Dart" />
-                            </form>
+                            <a target="_blank" href="https://coded.art"><button>Code Dart</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section id="identity">
+        <section id="identity" class="accordionset">
             <a class="target">
                 <center><h3>identity</h3></center>
             </a>
-            <br/>
+            <br />
             <ul>
                 <li>
                     <div class="accordion">
@@ -132,14 +129,19 @@
                         <a href="#collapse6.0" class="collapse" id="collapse6.0">[-]</a>
                     </div>
                 </li>
+                <li>
+                    <a href="#summary"><button>prev</button></a>
+                    <a target="_blank" href="https://coded.art/bob"><button>more</button></a>
+                    <a href="#writings"><button>next</button></a>
+                </li>
             </ul>
         </section>
 
-        <section id="miscellany">
+        <section id="writings" class="accordionset">
             <a class="target">
-                <center><h3>miscellany</h3></center>
+                <center><h3>writings</h3></center>
             </a>
-            <br/>
+            <br />
             <ul>
                 <li>
                     <div class="accordion">
@@ -184,23 +186,23 @@
                         <div class="extensible">
                             <article>
                                 <p>The following personal bits of advice assume knowledge of the related topics. Nothing on this page has been second-hand reviewed, so proceed with caution.</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     <u>Foundations</u>
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When applying trigonometric identities, a common mistake is to forget or confuse formulas as well as the intuition behind their construction. Remember that, where intuition might fail, higher-level
                                     patterns might instead be used to reconstruct formulas and aid recall.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>In some cases, patterns extend across identities:</p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     Both the half-angle and power-reducing formulas involve functions <i>f</i>(<i>t</i>) = (1 &ndash; cos(<i>t</i>))/2 and <i>g</i>(<i>t</i>) = (1 + cos(<i>t</i>))/2. For both sets of identities, the formulas
@@ -208,17 +210,17 @@
                                     formulas double the parameter value of, each invocation.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>The angle sum/difference formulas compose the double angle formulas, so committing the latter to memory is unnecessary.</p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     Patterns can take on any number of forms and scope. A direct relationship between sum/difference-to-product and product-to-sum/difference identities can be more difficult to establish. As one example:
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     On either side of the equation are a product of two trigonometric functions and a binomial of two trigonometric functions.
@@ -248,26 +250,26 @@
                                     For a binomial on the left side of the equation where both functions are cosine, the product on the right side of the equation is also multiplied by negative one.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     Here, developing the basic intuition, if not a separate set of patterns for each identity, would likely be more efficient.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p><u>Integrals</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When applying <i>u</i>-substitution to an expression, a common mistake is to forget or confuse elements of the <i>dx</i> substitute when attempting the operation mentally<i>. </i>Remember to write out the
                                     factorization required to convert to <i>du,</i>
                                     as frequently doing otherwise could raise the likelihood of oversight when a more complex factorization is entailed.
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>For example:</p>
                                 <p><i> </i>[3(1 &ndash; <i>x</i>/7)<sup>3</sup> &ndash; 2(1 &ndash; <i>x</i>/7)<sup>3</sup>]<i>x</i> <i>dx</i></p>
                                 <p><i> u</i> = 1 &ndash; (<i>x</i>/7); <i>du</i> = (-1/7) <i>dx</i></p>
@@ -275,16 +277,16 @@
                                 <p>[3<i>u</i><sup>3</sup> &ndash; 2<i>u</i><sup>3</sup>]<i>x</i><b> </b>(-7)<i> </i><i>du</i></p>
                                 <p><i> x</i> = 7(1 &ndash; <i>u</i>)</p>
                                 <p>[3<i>u</i><sup>3</sup> &ndash; 2<i>u</i><sup>3</sup>](7(1 &ndash;<i> u</i>))(-7)<i> </i><i>du</i></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When re-applying integration by parts to an expression <i>xy</i>, where <i>u</i> equals <i>x</i> and <i>v</i> equals the antiderivative of <i>y</i>, a common mistake is to set<i> u</i> equal to the
                                     <i>y</i>-term. Remember that, in subsequent applications of integration by parts, <i>u</i> equals the derivative of the <i>x</i>-term from the previous step.
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When integrating exponential functions, where <i>x</i><sup><i>a </i></sup>becomes (<i>x</i><sup><i>a</i></sup><sup> </sup><sup>+</sup><sup> 1</sup>/(<i>a</i> + 1)), a common mistake is to omit (1/(
                                     <i>a </i><i>+</i> 1)) after converting <i>x</i><sup><i>a </i></sup>to <i>x</i><sup><i>a</i></sup><sup> </sup><sup>+</sup><sup> 1</sup>. In that case, it may be helpful to always write (<i>x</i>
@@ -292,25 +294,25 @@
                                     1)) first may help prevent oversight.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When integrating trigonometric and/or exponential functions where one of the limits of integration is 0, a common mistake is to dismiss the integral evaluated at the limit of 0. Remember to evaluate each
                                     term at both limits even if the integrand does not contain trigonometric or exponential functions, as frequent dismissal, even where valid in some cases, makes mental error in other cases more likely.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When integrating to find area A by &int; <i>f dA </i>or volume V by<i> </i>&int; <i>f dV</i> where <i>f</i> is bound by shape<i> S</i>, a common mistake is to forget how to simplify the expression without
                                     formal integration. Remember that when <i>f</i> is a constant <i>K </i>that &int; <i>dA</i> can be converted to <i>A</i>(<i>S</i>)<i> </i>and &int; <i>dV</i> can be converted to<i> V</i>(<i>S</i>), such
@@ -320,9 +322,9 @@
                                     <i>dA</i>
                                     = <i>K</i> (<i>A</i>(<i>S</i>)) and <i>V</i> = <i>K </i>&int; <i>d</i><i>V</i> = <i>K</i> (<i>V</i>(<i>S</i>)).
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When converting from Cartesian to spherical coordinate system and
                                     <i>f</i>
@@ -331,7 +333,7 @@
                                     forms an angle <i>&Phi; </i>with the horizontal equal to tan<sup>-1</sup>(1/<i>a</i>), which is found intuitively by converting variables from Cartesian to spherical within the equation of the cone.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     For example:
@@ -358,14 +360,14 @@
                                     = tan<sup>-1</sup>(1/<i>a</i>)
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>Where the vertex angle is (&pi; / 2): <i>a</i> = 1 and <i>&Phi; </i><i>= </i>tan<sup>-1</sup>(1) = (&pi; / 4).</p>
                                 <p>
                                     <i> </i>
                                 </p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When parameterizing a cone provided only its graphical features, a common mistake is to fail to convert all of its features into an equation. Remember that, when parameterizing in terms of radius<i> </i>
                                     <i>s</i>
@@ -376,9 +378,9 @@
                                     would be expressed as &radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>). Hence, <i>r</i>(<i>s</i>,<i>t</i>) = &lt;<i>s</i>cos(<i>t</i>),<i> s</i>sin(<i>t</i>), <i>h</i>[1 &ndash;
                                     (1/<i>a</i>)<i>s</i>]&gt; and <i>r</i>(<i>x</i>,<i>y</i>) = &lt;<i>x</i>, <i>y, h</i>[1 &ndash; (1/<i>a</i>)&radic;(<i>x</i><sup>2</sup> + <i>y</i><sup>2</sup>) ]&gt;.
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When converting from Cartesian to either polar, cylindrical or spherical coordinate system, a common mistake is to forget to carry forward variables involved in the conversion of<i> dA</i> (<i>r </i>for
                                     polar) or<i> dV </i>(<i>r</i>
@@ -389,35 +391,35 @@
                                     <i>d&Phi;d&theta;</i>
                                     for spherical, where the brackets distinguish those elements of the expression that are due for integration.
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>For example:</p>
                                 <p>
                                     <i> </i>[<i>x<sup>2</sup></i> + <i>y<sup>2</sup></i> + <i>z<sup>2</sup></i>] <i>dV = &rho;<sup>2</sup></i>sin(<i>&Phi;</i>)<i> </i>[<i>&rho;<sup>2</sup></i>]
                                     <i>d&rho;d&Phi;d&theta; = </i>sin(<i>&Phi;</i>)<i> </i>[<i>&rho;<sup>4</sup></i>]
                                     <i>d&rho;d&Phi;d&theta; </i>
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p><u>Vectors</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>When visually assessing the direction of curl for a vector field <i>F</i>, a common mistake is to misapply the right-hand rule and reverse the direction. Remember this alternate approach:</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     a. For each axis, visualize (i.e. tilt, for a non-vertical axis) the graph to where the axis is situated in the vertical position (typically associated with <i>z</i>). For example, if the <i>y</i>-axis
                                     was horizontal, tilt all the elements in the graph along with the<i> y</i>-axis until<i> y</i> is vertical (assuming the typical position of<i> z</i>).<i> </i>While so doing, view the vector field against
                                     that axis from a two-dimensional perspective (agnostic to one of two horizontal axes), determining whether individual vectors in the field cross each other. For example, a cylindrical rotation about that
                                     axis would in two dimensions demonstrate crossing between individual vectors that, in three dimensions, would be in front of and behind the axis. Crossing indicates rotation.
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     b. When rotation is identified, again tilt that vertical axis down so that it is perpendicular to your line of vision. For example, the axis would point directly toward your eyes on the positive side and
                                     directly away from your eyes on the negative side. View the vector field from this perspective and visualize drawing a circle around the axis, following the direction of the vectors. Assess whether that
                                     circle is being drawn in a clockwise or counterclockwise direction. That direction indicates the direction of curl (clockwise is negative; counterclockwise is positive).
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     When computing the surface area of surface <i>S</i>
                                     (alone or as part of the surface integral for a scalar function) represented parametrically in cylindrical or spherical coordinates, a common mistake is to express
@@ -426,13 +428,13 @@
                                     replacing instances of<i> </i>Cartesian variables with their cylindrical or spherical counterparts<i>.</i>
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When computing the surface integral against a surface <i>S</i> that is expressed in naturalized form <i>z</i> = <i>f</i>(<i>x</i>,<i>y</i>), a common mistake is to apply the formula | <i>r</i>
@@ -445,13 +447,13 @@
                                     <i> r</i><sub><i>y</i></sub> ) = &lt; &ndash;<i>(dz/dx)</i>, &ndash;(<i>dz</i><i>/</i><i>dy)</i>, 1 &gt;.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When computing the surface integral for a vector field against surface <i>S</i>, where<i> S</i> represents a spherical surface,<i> </i><i>&rho;</i> represents fluid density,<i> v</i> represents a velocity
@@ -460,12 +462,12 @@
                                     instances of a variable name that appears in multiple contexts within the same problem, as is done for radius <i>r</i> and angle <i>&theta;</i> when represented as parameters of representation <i>r</i>,
                                     becoming <i>r</i>(<i>s</i>,<i>t</i>) instead of <i>r</i>(<i>r</i>,<i>&theta;</i>).
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     &ndash;
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When computing the surface integral for a vector field against surface <i>S</i>
@@ -476,7 +478,7 @@
                                     <i>&rho;</i><sup><i>2</i></sup>sin(<i>&Phi;</i>) if<i> S</i><i> </i>is parameterized and the partial derivatives are expressed in Cartesian coordinates and converted to cylindrical or spherical
                                     coordinates by replacing instances of<i> </i>Cartesian variables with their cylindrical or spherical counterparts<i>.</i>
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
                                 <p></p>
                                 <p>
@@ -489,12 +491,12 @@
                                     <i>&#9679;</i><i> </i><i>r</i><sub>s</sub><sub><i> </i></sub>x<i> r</i><sub><i>t</i></sub>)<i> dsdt = F </i><i>&#9679;</i><i> </i>&ndash; (<i>r</i><sub>s</sub><sub><i> </i></sub>x<i> r</i>
                                     <sub><i>t</i></sub>)<i> dsdt = F </i><i>&#9679;</i><i> </i><i>r</i><sub>t</sub><sub><i> </i></sub>x<i> r</i><sub><i>s</i></sub><i> dsd</i><i>t.</i>
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&ndash;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p><u>Appli</u><u>cations</u></p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When interpreting the motion of a satellite in circular orbit, a common mistake is to assume that the satellite maintains its speed by forward acceleration. Remember that a satellite with constant speed
@@ -504,13 +506,13 @@
                                     offset the constant gravitational pull toward the planet center which balances the angular motion of the satellite.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     When interpreting the non-motion of a person seated on a chair, a common mistake is to assume that no horizontal forces act on the person, and that spinal compression is generated exclusively by the
@@ -525,11 +527,98 @@
                                     parallel to the plane of the seat.
                                 </p>
                                 <p>
-                                    <br/>
+                                    <br />
                                 </p>
                                 <p>
                                     &ndash;
                                 </p>
+                                <br />
+                                <p><u>Linear Algebra</u></p>
+                                <br />
+
+                                <p>
+                                    Linear Algebra studies the properties of, and approaches to solving, systems of linear equations, or linear systems. Linear systems appear in real-life contexts when more than one linear equation
+                                    describes a process. A linear equation can be expressed as&nbsp;<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i>, where {<i><b>x1</b></i>
+                                    <i>,&nbsp;</i><i><b>x2</b></i>,&hellip;,&nbsp;<i><b>xn</b></i>} is a set of unknown variables, and {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} is a set of coefficients that, each, correspond to an unknown
+                                    variable of the same index. Where linear equations within the same system are expressed with the same unknown variables, the solution to an unknown variable in one equation of the system can be
+                                    substituted into all instances of the same unknown variable in other equations of the system. A solution to the linear system is a set of values {<i><b>s1</b></i><i>,&nbsp;</i>
+                                    <i><b>s2</b></i>,&hellip;,&nbsp;} that, when substituted into the unknown variables of the corresponding indeces, makes all linear equations of the system true statements. A system may have more than one
+                                    solution, where substitution of different combinations of values into the unknowns of the system makes the system true. The set of all possible solutions is a solution set. One approach to solving a
+                                    system of linear equations is to express one linear equation in terms of a single variable, then substitute that expression into instances of the single variable within other equations of the system in
+                                    order to reduce the number of unknowns, repeating the process until a solution can be determined. Because not all linear systems have a solution (i.e. are not solveable), one might not learn of this fact
+                                    until exhausting all possible substitutions. Linear Algebra studies more efficient approaches to solving systems of linear equations, by representing the coefficients of each linear equation as a row
+                                    within a matrix. One such approach involves the application of computationally-efficient algorithms called row reduction operations.
+                                </p>
+                                <p>
+                                    Row reduction operations, which are applied to the rows of a matrix, comprise a set of permitted operations: a. replacing one row by the sum of itself and the scale of another row; b. interchanging the
+                                    order of two rows; c. scalar multiplying a row by a nonzero constant.
+                                    <br />
+                                    Row reduction operations are applied in such a way as to manipulate the entries of the matrix to embody a particular form: namely,<i>row echelon</i>&nbsp;(zeros beneathe and to the left of each leading
+                                    entry) and&nbsp;<i>reduced row echelon</i>&nbsp;(zeros beneath, to the left of and above each leading entry, where each leading entry must also be the number one). From the properties of these forms can
+                                    be inferred properties of the associated system of equations, including solutions of the system. A matrix that positions the&nbsp;<i><b>b</b></i>&nbsp;value, from the linear equation&nbsp;<i>a1</i>
+                                    <i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i><i>,</i>&nbsp;into the rightmost column of the matrix is called an&nbsp;
+                                    <i>augmented matrix.</i>&nbsp;After reduction to reduced row echelon form, the resulting values of the augmented matrix indicate the ability (or inability) to solve for<i><b>x</b></i>, or&nbsp;{
+                                    <i><b>x1</b></i><i>,&nbsp;</i><i><b>x2</b></i>,&hellip;,&nbsp;<i><b>xn</b></i>}.
+                                </p>
+                                <p>
+                                    Take, for example, a system of linear equations {2<i><b>x1</b></i><i>+</i>6<i><b>x2</b></i>=6,&nbsp;<i><b>x1</b></i><i>+2</i><i><b>x2</b></i><i>=</i>2}. In augmented matrix form, the two rows may be
+                                    interchanged, moving [1 2 2] from the second row to the first row, and [2 6 6] from the first row to the second row. The second row of [2 6 6] may be replaced with the sum of itself, and the first row of
+                                    [1 2 2] scaled by a factor of -2, to yield [0 2 2] for the second row and [1 2 2] for the first row. The form of this matrix is called&nbsp;<i>echelon form</i>, and indicates the location of
+                                    the&nbsp;<i>pivots</i>, or leading entries, for each row (1st&nbsp;column in the first row; 2nd&nbsp;column in the 2nd&nbsp;row). The second row may then be scaled by a factor of &frac12; to yield [0 1 1]
+                                    for the second row. Replacing the first row with the sum of itself, and the second row scaled by a factor of -2, yields [1 0 0] for the first row and [0 1 1] for the second row. The form of this matrix is
+                                    called&nbsp;<i>reduced row echelon&nbsp;</i>form, and indicates the solution for row equivalent matrices. Row equivalent matrices are matrices that, with any combination of row reduction operations, yield
+                                    the same matrix in reduced row echelon form. Here, the first row indicates that&nbsp;<i><b>x1&nbsp;</b></i>equals 0 and the second row indicates that&nbsp;<i><b>x2&nbsp;</b></i>equals 1. Thus, the
+                                    solution of the linear system is {0, 1}.
+                                </p>
+                                <p>
+                                    The linear equation&nbsp;<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b&nbsp;</b></i>can be expressed in different forms: as a vector equation,
+                                    a matrix equation, or a linear transformation. As a vector equation, a1&nbsp;is the first column,&nbsp;<i>a2</i>&nbsp;is the second column, and&nbsp;<i><b>b</b></i>&nbsp;is the last columnof the augmented
+                                    matrix in reduced row echelon form i.e. [1; 0]<i><b>x1</b></i>&nbsp;+ [0; 1]<i><b>x2</b></i>&nbsp;= [0; 1]. (In the preceding example and hereforth, a semicolon inside of a matrix indicates a separate
+                                    row, so, for example, two matrix entries separated by a semicolon indicates a two row, single column matrix i.e. a column vector.) As a matrix equation&nbsp;<i>A</i><i><b>x</b></i><i>=</i><i><b>b</b></i>,
+                                    matrix&nbsp;<i>A&nbsp;</i>is composed as [<i>a1a2&nbsp;an</i>] and the augmented column of the reduced row echelon form of [&nbsp;<i>A |</i>&nbsp;<i><b>b</b></i>&nbsp;] is&nbsp;<i><b>x</b></i>.As a linear
+                                    transformation&nbsp;<i>A</i><i><b>x</b></i><i>=T(</i><i><b>x</b></i><i>)</i>, the image of&nbsp;<i><b>x</b></i>&nbsp;under the action of&nbsp;<i>T&nbsp;</i>is given by&nbsp;<i>T(</i><i><b>x</b></i>
+                                    <i>),&nbsp;</i>where&nbsp;<i>T</i>&nbsp;can be viewed as the mapping of&nbsp;<i><b>x</b></i>&nbsp;to&nbsp;<i><b>b</b></i>. The various forms of linear equation&nbsp;<i>a1</i><i><b>x1</b></i><i>+a2</i>
+                                    <i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i>&nbsp;yield distinct, but interconnected, insights.
+                                </p>
+                                <p>
+                                    &bull; When the reduced row echelon form of an augmented matrix with&nbsp;<i>m</i>&nbsp;rows and&nbsp;<i>n</i>&nbsp;columns contains a pivot in the rightmost column, (e.g. [1 2 2; 2 4 6] reduces to [1 2
+                                    2; 0 0 2] where 0 &ne; 2): then no value for&nbsp;<i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>for the linear equation<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i>
+                                    <i>=&nbsp;</i><i><b>b</b></i>&nbsp;has a solution in&nbsp;<i>Rn</i>, and the system is inconsistent.
+                                </p>
+                                <p>
+                                    &bull; When the reduced row echelon form of an augmented matrix with&nbsp;<i>m</i>&nbsp;rows and&nbsp;<i>n</i>&nbsp;columns does not contain a pivot in the rightmost column and does not contain a pivot in
+                                    each row (e.g. [1 2 2; 2 4 4] reduces to [1 2 2; 0 0 0], where&nbsp;<i><b>x1</b></i>equals 2 &ndash; 2<i><b>x2</b></i>): then some real values for&nbsp;<i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>&nbsp;for the
+                                    linear equation<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i>&nbsp;have solutions in&nbsp;<i>Rn</i>&nbsp;where&nbsp;
+                                    <i><b>b&nbsp;</b></i>is a linear combination of the vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>}, the system is consistent, and at least one element of the set {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} is
+                                    a linear combination of the other elements of the set. In other words, an element of the set {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} is the sum of scalar multiples of other elements of the set.
+                                </p>
+                                <p>
+                                    &bull; When the reduced row echelon form of an augmented matrix with&nbsp;<i>m</i>&nbsp;rows and&nbsp;<i>n</i>&nbsp;columns does not contain a pivot in the rightmost column, does contain a pivot in each
+                                    row, and, where&nbsp;<i><b>b</b></i>&nbsp;is the zero vector,&nbsp;<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=</i>&nbsp;<b>0</b>&nbsp;contains a nontrivial
+                                    solution (e.g. [1 2 2 0; 1 2 6 0] reduces to [1 2 0 0; 0 0 1 0], with&nbsp;<i><b>x1</b></i>equal to -2<i><b>x2</b></i>&nbsp;and&nbsp;<i><b>x3</b></i>&nbsp;equal to zero): then every value for
+                                    <i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>&nbsp;for the linear equation<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i>has a solution
+                                    where&nbsp;<i><b>b&nbsp;</b></i>is a linear combination of the vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>}, the system is consistent,&nbsp;<i>T</i>&nbsp;maps each&nbsp;
+                                    <i><b>x</b></i>&nbsp;in&nbsp;<i>Rn</i>to at least one&nbsp;<i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>, no elements of the set {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} are linear combinations of other elements
+                                    of the set, and the span (the set of all linear combinations) of vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} is in&nbsp;<i>Rm</i>.
+                                </p>
+                                <p>
+                                    &bull; When the reduced row echelon form of an augmented matrix with&nbsp;<i>m</i>&nbsp;rows and&nbsp;<i>n</i>&nbsp;columns does not contain a pivot in the rightmost column, does contain a pivot in each
+                                    row, and, where&nbsp;<i><b>b</b></i>&nbsp;is the zero vector,&nbsp;<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=</i>&nbsp;<b>0</b>&nbsp;contains only the
+                                    trivial solution (e.g. [1 2 0; 2 6 0] reduces to [1 0 0; 0 1 0], where&nbsp;<i><b>x1</b></i>&nbsp;and&nbsp;<i><b>x2</b></i>&nbsp;both equal zero): then every value for
+                                    <i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>&nbsp;for the linear equation<i>a1</i><i><b>x1</b></i><i>+a2</i><i><b>x2</b></i><i>+&hellip;+an</i><i><b>xn</b></i><i>=&nbsp;</i><i><b>b</b></i>has a solution
+                                    where&nbsp;<i><b>b&nbsp;</b></i>is a linear combination of the vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>}, the system is consistent,&nbsp;<i>T</i>&nbsp;maps each&nbsp;
+                                    <i><b>x</b></i>&nbsp;in&nbsp;<i>Rn</i>to only one&nbsp;<i><b>b</b></i>&nbsp;in&nbsp;<i>Rm</i>, no elements of the set {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} are linear combinations of other elements of
+                                    the set, the span of vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} coincides with&nbsp;<i>Rm</i>, and the vectors {<i>a1,&nbsp;a2,&hellip;,&nbsp;an</i>} are linearly independent.
+                                </p>
+                                <p>
+                                    The initial concepts introduced in Linear Algebra form the basis that spans all subsequent concepts. This is particularly true when vectors of the vector equation are connoted as vector spaces, when the
+                                    linear combination&nbsp;<i><b>b</b></i>&nbsp;of the matrix equation takes the form of the eigenvector scaled by an eigenvalue, and, for linear transformations, when&nbsp;<i><b>x</b></i>&nbsp;becomes the
+                                    kernel (or null space) which maps to the zero vector, and&nbsp;<i>T(</i><i><b>x</b></i><i>)</i>&nbsp;the range (or column space) which maps from a vector&nbsp;<i><b>x</b></i>. The study of Linear Algebra
+                                    involves viewing much of the same phenomena from different perspectives where they can be applied to different types of problems. Gaining the early intuition makes subsequent learning less of a surprise
+                                    and more of a natural progression. Meanwhile, the unfolding of new considerations adds depth and meaning to prior learning, so regularly surveying learned concepts may be helpful for better appreciating
+                                    interconnections.
+                                </p>
+                                <br />
                             </article>
                         </div>
                         <a href="#collapse2.1" class="collapse" id="collapse2.1">[-]</a>
@@ -541,9 +630,9 @@
                         <div class="extensible">
                             <article>
                                 <p>The following loose notes include a few personal bits of advice that assume knowledge of the related topics. Nothing on this page has been second-hand reviewed, so proceed with caution.</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p><u>Foundations</u></p>
-                                <br/>
+                                <br />
                                 <p>
                                     When first approaching a quantitative Physics problem, I recommend the following: Visualize the problem i.e. Try to develop an intuitive sense of what is happening and an expectation of what should occur,
                                     and draw a diagram. List all known variables alongside their quantities, as well as the unknown variable. Also list known formulas that most closely relate to the logical conditions present in the
@@ -556,7 +645,7 @@
                                     the inner-workings of the material world to better anticipate the path to subsequent solutions. The solution should be reasonable and if not, review your steps checking for computational or logical
                                     errors.
                                 </p>
-                                <br/>
+                                <br />
                                 <p>Some other common sources of errors may be:</p>
                                 <p>Context changes in multipart problems</p>
                                 <p>Angle quadrant adjustments</p>
@@ -566,20 +655,20 @@
                                 <p>Square and square root signs</p>
                                 <p>Calculator mode: radians or degrees</p>
                                 <p>Calculator input accuracy</p>
-                                <br/>
+                                <br />
                                 <p>
                                     In determining the formulas that most closely relate to the logical conditions of the problem, it may help to distinguish related but disparate contexts: system composition (single particle, multiple
                                     particle), system dynamics (isolated system, affected system), rate of change (instantaneous, average), path of motion (linear, rolling, angular, uniform circular), etc.
                                 </p>
-                                <br/>
+                                <br />
                                 <p>
                                     In determining a path to the solution, it may help to distinguish the subjects that underpin the logical conditions of a problem. Frequently reappearing in later subjects in different forms are the
                                     kinematics formulas: constant acceleration, force, energy (kinetic/potential), work, momentum, etc.
                                 </p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Magnetic Fields</u></p>
-                                <br/>
+                                <br />
                                 <p>Single charge moving through external magnetic field produces magnetic force</p>
                                 <p>&Phi; is angle of charge movement relative to B movement</p>
                                 <p>B is strength of field</p>
@@ -588,330 +677,330 @@
                                 <p>up if B is after v</p>
                                 <p>down if B is before v</p>
                                 <p>F<sub>B</sub> is centripetal if &Phi; is &pi;/2</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>mass of proton m<sub>p</sub> = 1.67 x 10<sup>-27</sup> kg</p>
                                 <p>mass of electron m<sub>e</sub> = 9.11 x 10<sup>-31</sup> kg</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>For K = (&frac12;) mv<sup>2</sup>, do not forget (&frac12;) or <sup>2</sup> during computation</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>1 u = 1.66053886 x 10 <sup>-27</sup> kg</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>particle traveling through uniform magnetic field in circular path has &Phi; = &pi;/2 between v and B vectors</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>If &Phi; = &pi;/2, then F<sub>B </sub>= F<sub>c </sub>where particle centripetal acceleration a<sub>c</sub> = v<sup>2</sup>/r, and path of particle is circular</p>
                                 <p>Otherwise, path of particle is</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Hall effect: across conductor moving through uniform field B at speed v is voltage V = Bvd</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>force on current in magnetic field F = qvBsin&Phi; = (&Delta;t/&Delta;t)(&Delta;q)(v)Bsin&Phi; = (&Delta;q/&Delta;t)(v&Delta;t)Bsin&Phi; = ILBsin&Phi;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Net torque on current carrying coil &tau; = ILB(1/2)wsin&Phi; =IABsin&Phi; x N turns of wire</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Moving charge creates own magnetic field</p>
                                 <p>Charges do not feel own magnetic field but can affect other charges with own magnetic field</p>
                                 <p>Magnetic field rotates CCW around upward current</p>
                                 <p>Changing shape of wires to form a solenoid, inside of the solenoid the magnetic field is flattened;</p>
                                 <p>outside of the solenoid the magnetic field on either side rotates</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Permeability constant &mu;<sub>0</sub> = 4&pi; x 10<sup>-7</sup> Tm/A (distinguish from permittivity constant 8.85 x 10<sup>9 </sup>C<sup>2</sup>/(Nm<sup>2</sup>))</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Turns per unit length n = T/L</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>single long straight wire: B = &mu;<sub>0</sub>I/(2&pi;R)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>force on first current carrying wire due to second current carrying wire:</p>
                                 <p>F<sub>ba</sub> = I<sub>b</sub>LB<sub>a</sub>sin(&pi;/2) = &mu;<sub>0 </sub>Li<sub>a</sub>i<sub>b</sub>/(2&pi;d)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>loop of wire: B = &mu;<sub>0</sub>I/(2R)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>interior of solenoid: B = &mu;<sub>0 </sub>nI</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Inductance</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Changing the magnetic field over a wire induces a current</p>
                                 <p>Flux depends on change in the magnetic field over sections of wire (a function of the area of the wire)</p>
                                 <p>i.e. when the intensity of the magnetic field through different sections of wire is different</p>
                                 <p>as by change in intensity of magnetic field, change in the cross-sectional area of wire crossed by field,</p>
                                 <p>or change in the angle of wire to the field which intensifies or diminishes field lines (times sin &Phi;)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>B increasing and into page, induced emf CCW</p>
                                 <p>B decreasing and away from page, induced emf CCW</p>
                                 <p>B decreasing and into page, induced emf CW</p>
                                 <p>B increasing and away from page, induced emf CW</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>all charges within conductor are moving</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>force on each charge within conductor: F = qvB</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>separated charges on ends of conductor cause induced, or motional, emf when vBL are perpendicular:</p>
                                 <p>&epsilon; = vBL</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&epsilon; = vBL = (&Delta;v/&Delta;t)LB = (&Delta;A/&Delta;t)B</p>
                                 <p>magnetic flux &Phi;<sub>B </sub>= &int;B dA</p>
                                 <p>where B is uniform and A is perpendicular to B, &Phi;<sub>B</sub> = BA</p>
                                 <p>average &epsilon; induced in coil is = d(&Phi;<sub>B</sub>)/dt = N (&Delta;&Phi;<sub>B</sub>/&Delta;t)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Determining if flux penetrating coil is increasing or decreasing</p>
                                 <p>direction of induced magnetic field opposes flux</p>
                                 <p>direction of induced current is CCW to upward magnetic field</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>coil entering field into page will balance away from page for A crossed by field, CCW current</p>
                                 <p>coil exiting field into page will balance into page for A not crossed by field, CW current</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Alternating Current</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>in LC circuit, angular frequency of (i, q, and V) oscillation is &omega; = 1/&radic;(LC)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>in oscillating LC circuit, energy shuttles periodically between:</p>
                                 <p>inductor magnetic field U<sub>B</sub> = (1/2)Li<sup>2</sup></p>
                                 <p>capacitor electric field U<sub>E</sub> = (1/2)(1/C)q<sup>2</sup></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>analogy between mechanical energy in block-spring and electromagnetic energy in LC circuit:</p>
                                 <p>q corresponds to x, 1/C corresponds to k</p>
                                 <p>i corresponds to v, L corresponds to m</p>
                                 <p>angular frequency of oscillation in LC circuit corresponds to that in block-spring is &omega; = &radic;(k/m)</p>
                                 <p>total energy in block-spring is U = U<sub>b</sub> + U<sub>s</sub> corresponds to that in LC circuit U = U<sub>B </sub>+ U<sub>E</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>U remains constant with time, so dU/dt = 0</p>
                                 <p>general solution to DE is x = X cos (&omega;t + &Phi;) for block-spring and q = Q cos (&omega;t + &Phi;) for LC circuit</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>current dq/dt = i = - &omega;Q sin(&omega;t + &Phi;)</p>
                                 <p>amplitude I = &omega;Q</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Charge flow reverses direction periodically</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>V = V<sub>0</sub>sin(2 &pi; ft)</p>
                                 <p>I = I<sub>0</sub>sin(2 &pi; ft)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>P = IV = I<sub>0</sub> V<sub>0</sub> sin<sup>2</sup>(2 &pi; ft)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>average P = I<sub>0</sub> V<sub>0</sub> /2 = (I<sub>0</sub> / &radic;2) (V<sub>0</sub> / &radic;2) = I<sub>rms</sub>V<sub>rms</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>mutual inductance: changing current in one coil induces emf in second coil</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&epsilon; = - N (&Delta;&Phi;<sub>B</sub>/&Delta;t)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>N &Phi;<sub>B </sub> = Li</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&epsilon;<sub>1 </sub>= - M (di<sub>1</sub>/dt)</p>
                                 <p>&epsilon;<sub>2 </sub>= - M (di<sub>2</sub>/dt)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Transformer that steps up voltage simultaneously steps down current, vice versa</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>R circuit has same V at all f where V = IR</p>
                                 <p>C circuit V varies with f where V = Ix<sub>c</sub></p>
                                 <p>L circuit V varies with f where V = Ix<sub>L</sub></p>
                                 <p>RCL circuit V varies with f where V = IZ</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>current and voltage phasors rotate at frequency f; y component represents magnitude</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Waves</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>3 types of waves:</p>
                                 <p>mechanical (governed by kinematics, exist only in material medium)</p>
                                 <p>EM (require no material medium to exist, travel through vacuum at same speed)</p>
                                 <p>matter (fundamental particles)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>angular wave number k = 2&pi; / &lambda; (rad/m)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>angular frequency &omega; = 2&pi; / T (rad/s)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>wave speed v = &lambda; f = &lambda;/T = &omega; / k</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>wavelength &lambda; = vT = v/f</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>time for point along wave to move from max to 0 displacement is T/4</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>traveling wave:</p>
                                 <p>given wave equation y(x,t) = y<sub>m</sub> sin[(2&pi; / &lambda;)x - (2&pi; / T)t] = y<sub>m</sub> sin[(k)x - (&omega;)t]:</p>
                                 <p>solve for components to find y<sub>m</sub>, &lambda;, T, f, v, &omega;, k</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>for second wave traveling in same direction, include phase shift y<sub>m</sub> sin[(k)x &ndash; (&omega;)t + &Phi;]</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>identical waves traveling in opposite directions are at 0 displacement every T/2 seconds</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>transverse speed u = - &omega; y<sub>m</sub> cos(kt - &omega;t)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>for max transverse speed, cos(kt - &omega;t) = 1</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>interfering waves</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>oscillation (SHM) x(t) = x<sub>m</sub>cos(&omega;t)</p>
                                 <p>differentiate to find v and a from x for displacement from equilibrium position</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>standing wave</p>
                                 <p>f = v/&lambda;</p>
                                 <p>( &lambda; = n/(2L), n = 1,2,3,&hellip; )</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>wave speed v &asymp; 343 m/s</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>v = &Delta;L/t = &lambda;/T = &lambda;f</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>L = &Delta;fv; &Delta;f = 1/f; L = v/f</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>magnitude of phase difference between waves at same frequency and different points</p>
                                 <p>&#981; = (&Delta;L/&lambda;)2&pi;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&Delta;L = L<sub>AP</sub> &ndash; L<sub>BP</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>intensity of sound projected onto or through surface I = P / A</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>intensity of sound projected isotropically from point source &lt;equally in all directions&gt; I = P<sub>s</sub> / (4&pi;r<sup>2</sup>)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>sound level &beta; = (10 d&beta;)log(I / I<sub>0</sub>) &lt;do not forget log&gt;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>I<sub>0</sub> = 1 x 10<sup>-12</sup> W/m<sup>2</sup></p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Electromagnetic Waves</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>speed of electromagnetic wave in vacuum c &asymp; 3 x 10<sup>8</sup> m/s</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>electromagnetic wave frequencies are represented by wave types on electromagnetic spectrum; include infrared, radio, visible light, UV, x-ray, gamma</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>electromagnetic waves carry electric and magnetic energy; energy which can be described in terms of density, power and intensity</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>electric energy density = (1/2)K&epsilon;<sub>0</sub>E<sub>2</sub>; K = 0,<sub> </sub>&epsilon;<sub>0</sub> = 8.854 x 10<sup>-12</sup> F/m<sub> </sub></p>
                                 <p>magnetic energy density = 1/(2&mu;<sub>0</sub>) x B<sup>2</sup>; &mu;<sub>0</sub> = 1.257 x 10<sup>-6</sup> H/m</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>electric and magnetic waves fluctuate sinusoidally and orthogonally; hence total EM energy density is the combination of electrical E and magnetic B components</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     because the magnitude of u<sub>E</sub> and u<sub>B</sub> of an EM wave are equivalent and energy density is sum of u<sub>E</sub> and u<sub>B</sub>, energy density is double the magnitude of either u
                                     <sub>E</sub> or u<sub>B</sub>
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>energy density u = energy / volume | power P = energy / time | intensity I = power / area</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>bonus feature of physics: c = 1 / &radic;(&epsilon;<sub>0</sub>&mu;<sub>0</sub>) E = cB</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>light waves from common sources are unpolarized i.e polarized randomly</p>
                                 <p>
                                     when unpolarized light passes through a polarizing filter, resulting wave intensity I is one-half of the original wave intensity I<sub>o</sub> because a component (x, y, or z) of the field of the wave is
                                     blocked by the polarizing filter.
                                 </p>
                                 <p>I = (&frac12;)I<sub>o</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     when polarized light (e.g. with polarization parallel to y-axis) passes through a second polarizing filter, resulting wave intensity I depends on the angle between the axes of the two polarizing filters
                                 </p>
                                 <p>I = I<sub>o</sub>cos<sup>2</sup>&theta;</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&theta; is difference between light and sheet polarization</p>
                                 <p>e.g. light parallel to y (0), sheet 53 from y, &theta; is 53 &ndash; 0. light at 53 from y, sheet at 90 from y (parallel to x), &theta; is 37.</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>for specular (non-diffuse) reflection, angle between ray of incidence and normal to reflective surface is equal to angle between ray of reflection and normal to reflective surface</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Snell&rsquo;s index n = c (through vacuum) / v (through medium)</p>
                                 <p>incident = reflected rays</p>
                                 <p>when ray encounters boundary of two media:</p>
                                 <p>n<sub>1</sub> sin &theta;<sub>1</sub> = n<sub>2</sub> sin &theta;<sub>2</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>n<sub>1 </sub>medium occur at incident and reflected rays, n<sub>2</sub> medium occur at refracted rays</p>
                                 <p>&theta;<sub>1</sub> angle of reflection / incident angle, &theta;<sub>2</sub> angle of refraction</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>if ray refracts away from normal when passing between media, ray has higher index of refraction in the subsequent medium</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>see indeces of refraction for common mediums (vacuum=1 (lowest), air&asymp;1, diamond=2.42(high))</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>if angle of refraction is 90, incident angle is critical angle, as sin(&theta;<sub>2</sub>) =1,</p>
                                 <p>sin &theta;<sub>c</sub> = n<sub>2 </sub>/ n<sub>1 </sub>and &theta;<sub>c</sub> = sin<sup>-1</sup>(n<sub>2</sub>/n<sub>1</sub>) for n<sub>1</sub> &gt; n<sub>2</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>reflected wave is fully polarized if incident, unpolarized wave strikes a boundary at &theta;<sub>B</sub> = tan<sup>-1</sup> (n<sub>2</sub>/n<sub>1</sub>)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>resonance frequency f<sub>o</sub> of RCL circuit is 1/(2&pi;&radic;(LC))</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>apparent depth, observer directly above object: d` = d (n<sub>2</sub>/n<sub>1</sub>)</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Images</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>radius r of concave and convex mirrors is distance from edge of sphere at center of mirror or central axis c to (hypothetical) center of sphere or center of curvature C</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>focal point or focus F of mirror is where parallel rays reflected off concave mirror intercept or reflected off concave mirror seem to intercept</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>focal length f is distance from center c of mirror to focal point F and is related to radius of curvature r by f = (&frac12;)r for both concave and convex mirrors</p>
                                 <p>f = r / 2</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>object distance is p, image distance is I, are difference between object and image positions and lens/mirror</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>image distance is regarded as positive for real images and negative for virtual images</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>existence of virtual image depends on perspective of viewer, whereas existence of real image does not depend on perspective of viewer</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>when reflected rays of image converge in real space (away from mirror) to form image, image is real</p>
                                 <p>when reflected rays of image converge in virtual space (toward mirror) for form image, image is virtual</p>
                                 <p>hence F of concave is real and of convex is virtual</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>images from convex and plane are virtual</p>
                                 <p>
                                     images from concave are real or virtual depending on distance of object from mirror and curvature of mirror causing reflected rays to either converge in real/ diverge in virtual space (real image) or
                                     diverge in real/ converge in virtual space (virtual image)
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>when real image of concave mirror converges in real space, appears with opposite orientation</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>as size of angles between light rays and central axis of spherical mirror C approach 0, following relationship is strengthened: 1/p + 1/i = 1/f</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>h is height of object / distance orthogonal to central axis of mirror</p>
                                 <p>h` is height of image orthogonal to central axis of mirror</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>lateral magnification |m| = h`/h; for plane mirror m = 1 &lt;conversions require taking absolute value of m&gt;</p>
                                 <p>m = -i/p</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>simplemagnifier m<sub>&theta;</sub> = (25 cm)/f</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>compound microscope M = m m<sub>&theta; </sub> = - (s / f<sub>ob</sub>) (25 cm)/f<sub>ey</sub></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>refracting telescope m<sub>&theta;</sub> = - (f<sub>ob</sub>/f<sub>ey</sub>)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>refractive power = 1/f = (n &ndash; 1)(1/r<sub>1</sub> &ndash; 1/r<sub>2</sub>)</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Interference</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>wavelength of light passing thru medium is equal to the wavelength through vacuum times velocity through medium divided by speed of light: &lambda;<sub>n</sub> = &lambda; v / c</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>frequency of light is unaffected by change of medium</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>diffraction describes tendency of incident wave, when encountering a barrier with narrow opening of length similar to the wavelength of the wave, to flare out beyond the barrier</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>For a given wavelength &lambda;, the diffraction is more pronounced the smaller the slit width.</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&Delta;L = d sin(&theta;) = m &lambda;</p>
                                 <p>if m = 0, 1, 2 , 3 &hellip; in phase, bright spot (maxima)</p>
                                 <p>if m = 0.5, 1.5, 2.5, 3.5 &hellip; out of phase, dark spot (minima)</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>&theta; = sin <sup>-1 </sup>(2&lambda; / d) for m = 2</p>
                                 <p>&theta; = sin <sup>-1 </sup>(1.5&lambda; / d) for m = 1.5</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>double slit arrangement interference fringes implies adjacent fringes, i.e. m = 1</p>
                                 <p>must specify non adjacency</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>phase difference between rays that reach first bright band to either side of central bright band is 1&lambda;</p>
                                 <p>phase difference between rays that reach first dark band to either side of central bright band is 0.5&lambda;</p>
                                 <p>...second bright band&hellip; 2&lambda; &hellip; and so forth</p>
                                 <p>...second dark band&hellip; 1.5&lambda; &hellip; and so forth</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>relating slit-to-screen separation D and fringe distance from center of interference pattern y<sub>m </sub> to slit separation and angle of separation:</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>an interference pattern results when light waves are coherent i.e. they reach any point on the screen with constant (does not vary in time) phase difference (either constantly out of phase or in phase)</p>
                                 <p>no interference pattern results when light waves are incoherent i.e. the phase difference between light waves is not constant, which can result due to nature of either source or slit</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>
                                     relating intensity of the fringe I created by two out of phase waves with electric field components E<sub>1</sub> and E<sub>2</sub> with constant baseline magnitude E<sub>0</sub>, angular frequency
                                     &omega; and phase difference of the waves between the slit to the screen &#981;:
                                 </p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>phase shift for maximums outside center of pattern is 2pi, 4pi, 6pi&hellip; (m = 0 is center</p>
                                 <p>phase shift for minimums outside center of pattern is pi, 3pi, 5pi...</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Diffraction</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>careful not to confuse equations for two slit interference and single slit diffraction</p>
                                 <p>widening slit decreases width of central maximum, vice versa</p>
                                 <p>phasor diagram: vector sum and elec component cycle between 0 / nonzero when moving away from central max</p>
@@ -923,24 +1012,24 @@
                                 <p>increasing the number of slits decreases half width of slits decreasing overlap of lines</p>
                                 <p>changing number of slits does not change dispersion, which involves separation of adjacent maxima of 2&lambda;</p>
                                 <p>bragg angle is angle between incident ray and reflection plane</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Relativity</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>event is something that happens and can be described by spacetime coordinates</p>
                                 <p>coordinate system is part of reference frame of observer</p>
                                 <p>reference frames herein describe inertial reference frames, where Newton&rsquo;s laws are not observably violated</p>
                                 <p>observers in different reference frames may record different coordinates to describe event</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>source and detector separating f = f<sub>0 </sub>&radic;((1 &ndash; &beta;)/(1+&beta;)), &beta; = v/c</p>
                                 <p>source and detector separating &lambda; = &lambda;<sub>0</sub>&radic;((1 + &beta;)/(1 &ndash; &beta;)), &beta; = v/c</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>transverse Doppler effect f = f<sub>0</sub>&radic;(1 - &beta;<sup>2</sup>)</p>
                                 <p>time dilation T = T<sub>0</sub> / &radic;(1 &ndash; &beta;<sup>2</sup>)</p>
-                                <p><br/></p>
-                                <p><br/></p>
+                                <p><br /></p>
+                                <p><br /></p>
                                 <p><u>Photons</u></p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>smallest quantity: quantum</p>
                                 <p>smallest quantity of light: photon (aspect of light that behaves like particle when interacting with matter)</p>
                                 <p>photon has energy: E = hf,</p>
@@ -972,7 +1061,7 @@
                                 <p>&lambda;`: scattered wavelength</p>
                                 <p>|&lambda; - &lambda;`| = &Delta; &lambda;</p>
                                 <p>f does not change</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>shift in x-ray wavelength (intermediate angle &#981;) as well as wavelength &lambda; are proportional to scatter angle &theta;</p>
                                 <p>E is inversely proportional to &lambda; and &theta;</p>
                                 <p>E and p are conserved during scattering</p>
@@ -980,12 +1069,81 @@
                                 <p>Moving particle such as e- e+ can be described as matter wave, which has Broglie&rsquo;s wavelength &lambda; = h/p; p=hf/c</p>
                                 <p>like light: when electron interacts with matter, behaves as particle and transfers energy and momentum</p>
                                 <p>when electron is in transit, behaves as a probability wave</p>
-                                <p><br/></p>
+                                <p><br /></p>
                                 <p>Increasing certainty of location (or momentum) decreases certainty of momentum (or location)</p>
+                                <br />
+                                <u><p>Applications</p></u>
+                                <br />
+                                <p>
+                                    Superposition and entanglement can be demonstrated by a system of subatomic particles, such as photons or electrons, directed at a polarizing apparatus, such as a light filter or a calcite crystal. This
+                                    stream of particles is hereafter referred to as, &lsquo;particles&rsquo;, and this polarizing apparatus is hereafter referred to as, &lsquo;apparatus&rsquo;. The angle of polarization of a particle is a
+                                    description of its electromagnetic oscillation. The angle of polarization of an apparatus is a description of its impedance orientation. A particle is considered to be aligned if the particle has the same
+                                    polarization as the polarization of the apparatus. A particle is considered to be antialigned if the particle has the orthogonal (90&deg; apart) polarization to the polarization of the apparatus. Aligned
+                                    particles are always yielded, and antialigned particles are always blocked, by the apparatus. For example, an apparatus polarized at 45&deg; always yields particles polarized at 45&deg;; an apparatus
+                                    polarized at 90&deg; always blocks particles polarized at 0&deg;.
+                                </p>
+                                <p>
+                                    When a particle is either aligned or antialigned, the correspondence between initial and final particle state is absolute, so the behavior of the particles is characterized as deterministic. The discrete
+                                    probability that a particle with deterministic behavior is yielded by the apparatus is always either 0% or 100%. This probability can be expressed as a boolean (0 or 1). Quantum properties do not manifest
+                                    when a particle behaves deterministically.
+                                </p>
+                                <p>
+                                    When particles neither aligned nor antialigned with the apparatus, some particles are yielded, while other particles are blocked, by the apparatus. In this scenario, the probability is random that, within
+                                    a stream of particles, an individual particle is either yielded or blocked by the apparatus, so the behavior of the particles is characterized as probabilistic. The discrete probability that a particle
+                                    with probabilistic behavior is yielded by the apparatus is always between 0% and 100%. This probability can be expressed as a combination of possible states, which is called a superposition.
+                                </p>
+                                <p>
+                                    The polarization of the particles is measured by interaction with the apparatus, so the interaction between particles and apparatus is hereafter referred to as, measurement. Particles with probabilistic
+                                    behavior when measured by the apparatus lose their initial polarization state. Those particles that are yielded inherit the same polarization as the polarization of the apparatus, while those particles
+                                    that are blocked inherit the orthogonal polarization to the polarization of the apparatus. After measurement, the particles are either aligned or antialigned with the apparatus, so their behavior becomes
+                                    deterministic; superposition is lost, and subsequent measurements with the apparatus produce the same result.
+                                </p>
+                                <p>
+                                    The polarization of a particle can be characterized by the probability of the particle existing in one of two states (e.g. 0&deg; or 90&deg;). This probability can be associated with a boolean (0 or 1),
+                                    and is referred to as spin direction (0 is down; 1 is up). In classical computing, bits are represented by electronic switches existing in one of two states &ndash; off (0) or on (1). In quantum
+                                    computing, qubits are represented by either the probability of a particle existing in one of two states &ndash; down (0) or up (1) &ndash; or a combination of probabilities of a particle existing in
+                                    either state. In computing, sequences of bits or qubits represent information.
+                                </p>
+                                <p>
+                                    Quantum state provides a probability distribution for the spin directions of a quantum system (a system of quantum particles such as qubits). A quantum system can exist as a single qubit or multiple
+                                    qubits. Quantum state is represented as an element of a vector space spanned by all possible states. A vector space is any nonempty set of elements i.e. objects called vectors upon which are defined
+                                    operations of addition and scalar multiplication (i.e. <i>a + bx</i>) that satisfy certain axioms. A vector can be embodied not only by a single-column or single-row matrix, but also
+                                    by any object satisfying the axioms of a vector space including a real-valued function or a polynomial. Quantum state is represented as a single-column matrix i.e. a column vector.
+                                </p>
+                                <p>
+                                    The entries of the quantum state vector correspond to the square roots of spin probabilities. For a single qubit system, the first entry corresponds to the probability that the measured spin will be down,
+                                    while the second entry corresponds to the probability that the measured spin will be up. For a particle that is aligned with the apparatus (e.g. both polarized at 90&deg;), the probability that the
+                                    measured spin will be down is 0% and up is 100%, so the state vector entries are (0, 1). For a particle that is antialigned with the apparatus (e.g. particle polarized at 0&deg;, apparatus polarized at
+                                    90&deg;), the probability that the measured spin will be down is 100% and up is 0%, so the state vector entries are (1, 0).
+                                </p>
+                                <p>
+                                    For a particle that is neither aligned nor antialigned with the apparatus (e.g. particle polarized at 0&deg; or 90&deg;, apparatus polarized at 45&deg;) the probability that the measured spin will be
+                                    either up or down is 50%, so the state vector entries are the square root of 50%, or (1/&radic;>2, 1/&radic;>2). The qubit associated with such a particle exists as the simultaneous superposition of
+                                    states, with each state represented as the square root of the probability that a spin direction will result from measurement.The state vectors of (0, 1) and (1, 0) form an orthonormal (orthogonal unit)
+                                    basis for the vector space spanned by, and as such can be scaled to compose, all possible state vectors e.g. (1/&radic;>2, 1/&radic;>2) = 1/&radic;>2 (1, 0) +1/&radic;>2 (0, 1). A multi-qubit system is
+                                    described by additional state vector entries that represent the probabilities of combinations of spin directions e.g. 11, 01, 10, 00. Under certain conditions, states of quantum particles in a multi-qubit
+                                    systemcan develop a connectionthat is maintained despite physical distance,which is calledan entanglement.
+                                </p>
+                                <p>
+                                    Bra-ket notation describes quantum state. A ket (denoted as <i>|</i><i>&Psi;</i><i>&gt;</i>) is the quantum state, or particle spin, column vector. A bra (denoted as <i>&lt;</i><i>&beta;|</i>) is the
+                                    adjoint (transpose of the complex conjugate) ofthe apparatus spincolumn vector, which is a row vector.Bra represents measurement which is a linear transformation (transformation preserving vector addition
+                                    and scalar multiplication) that mapsa vector in ket vector space to a number in the complex plane of form<i> a + bi</i>;<i> </i><i>i</i> being imaginary.
+                                </p>
+                                <p>
+                                    A ket represented by a subtractive square root of particle spin probabilities can be complex because the probability difference under the radical can be negative. The inner product of the bra and ket (the
+                                    sum of products of corresponding bra and ket entries) is the probability that the particle will measure with upward spin, where <i>i</i><sup><i>2</i></sup>
+                                    = -1.
+                                </p>
+                                <br />
                             </article>
                         </div>
                         <a href="#collapse2.0" class="collapse" id="collapse2.0">[-]</a>
                     </div>
+                </li>
+                <li>
+                    <a href="#identity"><button>prev</button></a>
+                    <a target="_blank" href="https://coded.art/blog"><button>more</button></a>
+                    <a href="#contact"><button>next</button></a>
                 </li>
             </ul>
         </section>
@@ -994,7 +1152,7 @@
             <a class="target">
                 <center><h3>contact</h3></center>
             </a>
-            <br/>
+            <br />
             <form class="contact" action="https://formspree.io/bob@coded.art" method="POST">
                 <ul>
                     <li>
