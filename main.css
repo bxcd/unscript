@@ -176,7 +176,6 @@ body nav {
 header h1 {
     font-family: var(--font-family-label);
     font-size: 27px;
-    text-transform: capitalize;
     padding: 0 40px;
     opacity: 0;
     animation-name: splash;
@@ -481,7 +480,7 @@ main .intro .choice .note .decision button:active {
 
 main section.accordionset button {
     opacity: 1 !important;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border: 2px outset #999;
     background: var(--color-primary);
     color: #fff;
